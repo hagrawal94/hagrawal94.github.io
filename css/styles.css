@@ -1,0 +1,122 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1499670542448-dca844775b06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ0MTA5fQ&auto=format&fit=crop&w=1632&q=80");
+  background-repeat: no-repeat;
+  padding: 3% 15% 7%;
+  background-color: #e7e7e7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #999999;
+  font-size: 0.9rem;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 2% 2% 7% 2%;
+}
+
+/* Sections */
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 2px;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  color: #999999;
+  cursor: pointer;
+}
+
+#navbar2 {
+  background-color: black;
+}
+
+.nav-link:active{
+  color: black
+}
+
+/* Buttons */
+
+.btn {
+  marker-start: 5px;
+  font-size: 0.9rem;
+}
+
+
+/* Title Section */
+
+#title {
+  border-radius: 5px 5px 0px 0px;
+  background-color: #fff;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 0px;
+  background-image: url("https://images.unsplash.com/photo-1499670542448-dca844775b06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ0MTA5fQ&auto=format&fit=crop&w=1632&q=80");
+  background-repeat: no-repeat;
+}
+
+/* Title Image */
+
+.title-content {
+  padding: 80px 250px
+}
+
+/* Search Bar */
+
+.search-bar{
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.images {
+  padding: 15px;
+}
+
+/* Footer Section */
+
+.social-icon {
+  margin: 20px 10px;
+}
+

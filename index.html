@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Harshit Unsplash Clone</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
+  <script scr = "https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.map"></script>
+
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+
+        <a href=""><i class="fas fa-camera navbar-brand"></i></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">...</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-dark" href="">Submit a photo</button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i style="font-size: 1.3rem;" class="fas fa-bell" ></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i style="font-size: 1.3rem;" class="fas fa-user-circle" ></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class="title-content">
+        <h1 class="big-heading">Unsplash</h1>
+        <p style="color: white;">Beautiful, free photos</p>
+        <p style="color: white;">Gifted by the world's most generous photographers.🎁</p>
+        <div class="search-bar">
+          <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+            <i class="fas fa-search" style="color: black;"></i>
+            <input class="form-control form-control-sm ml-3 w-75" style="border: none;" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-light" type="submit">Search</button>
+          </form>
+        </div>
+
+        <div id="root"></div>
+
+        <p style="margin:15px 0px 10px">Trending searches:<span style="color: white;"> business, computer, nature, love, house</span></p>
+      </div>
+
+      <!-- Photo Credits -->
+
+      <div class="photo-credits row" style="padding:5px;">
+        <div class="col-6">
+          <p style="text-align: start;">Photo of the night by<span style="color: white;"> Harshit</span></p>
+        </div>
+        <div class="col-6">
+          <p style="text-align: end;">Read more about the<span style="color: white;"> Unsplash License</span></p>
+        </div>
+      </div>
+         
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div id="like_button_container"></div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2020 Harshit Agrawal</p>
+    </div>
+  </footer>
+
+  <!-- React -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
+  <!-- <script type="module" src="index.js"></script> -->
+
+</body>
+
+</html>
