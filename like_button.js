@@ -746,18 +746,6 @@ class LikeButton extends React.Component {
         )
       ),
       React.createElement(
-        "button",
-        {
-          className: "navbar-toggler",
-          type: "button",
-          "data-toggle": "collapse",
-          "data-target": "#navbarTogglerDemo02",
-        },
-        React.createElement("span", {
-          className: "navbar-toggler-icon",
-        })
-      ),
-      React.createElement(
         "div",
         {
           className: "collapse navbar-collapse",
