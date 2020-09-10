@@ -746,47 +746,40 @@ class LikeButton extends React.Component {
         )
       ),
       React.createElement(
-        "div",
+        "ul",
         {
-          className: "collapse navbar-collapse",
-          id: "navbarTogglerDemo02",
+          className: "navbar-nav ml-auto",
         },
         React.createElement(
-          "ul",
+          "li",
           {
-            className: "navbar-nav ml-auto",
+            className: "nav-item",
           },
           React.createElement(
-            "li",
+            "a",
             {
-              className: "nav-item",
+              className: "nav-link",
+              href: "",
             },
-            React.createElement(
-              "a",
-              {
-                className: "nav-link",
-                href: "",
-              },
-              React.createElement("i", {
-                className: "fas fa-th-list",
-              })
-            )
-          ),
+            React.createElement("i", {
+              className: "fas fa-th-list",
+            })
+          )
+        ),
+        React.createElement(
+          "li",
+          {
+            className: "nav-item",
+          },
           React.createElement(
-            "li",
+            "a",
             {
-              className: "nav-item",
+              className: "nav-link",
+              href: "",
             },
-            React.createElement(
-              "a",
-              {
-                className: "nav-link",
-                href: "",
-              },
-              React.createElement("i", {
-                className: "fas fa-th-large",
-              })
-            )
+            React.createElement("i", {
+              className: "fas fa-th-large",
+            })
           )
         )
       )
