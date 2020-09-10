@@ -746,40 +746,59 @@ class LikeButton extends React.Component {
         )
       ),
       React.createElement(
-        "ul",
+        "button",
         {
-          className: "navbar-nav ml-auto",
+          className: "navbar-toggler",
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#navbarTogglerDemo02",
+        },
+        React.createElement("span", {
+          className: "navbar-toggler-icon",
+        })
+      ),
+      React.createElement(
+        "div",
+        {
+          className: "collapse navbar-collapse",
+          id: "navbarTogglerDemo02",
         },
         React.createElement(
-          "li",
+          "ul",
           {
-            className: "nav-item",
+            className: "navbar-nav ml-auto",
           },
           React.createElement(
-            "a",
+            "li",
             {
-              className: "nav-link",
-              href: "",
+              className: "nav-item",
             },
-            React.createElement("i", {
-              className: "fas fa-th-list",
-            })
-          )
-        ),
-        React.createElement(
-          "li",
-          {
-            className: "nav-item",
-          },
+            React.createElement(
+              "a",
+              {
+                className: "nav-link",
+                href: "",
+              },
+              React.createElement("i", {
+                className: "fas fa-th-list",
+              })
+            )
+          ),
           React.createElement(
-            "a",
+            "li",
             {
-              className: "nav-link",
-              href: "",
+              className: "nav-item",
             },
-            React.createElement("i", {
-              className: "fas fa-th-large",
-            })
+            React.createElement(
+              "a",
+              {
+                className: "nav-link",
+                href: "",
+              },
+              React.createElement("i", {
+                className: "fas fa-th-large",
+              })
+            )
           )
         )
       )
