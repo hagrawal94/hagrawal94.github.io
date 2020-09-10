@@ -1,1 +1,2 @@
 Ignore Lines 8-698 in like-button.js file
+Also, the Collection1, Collection2 appears at left while running on local machine, but on github hosted page, they appear in the center. So, the UI was exactly copied, but maybe some issues with browser rendering.
