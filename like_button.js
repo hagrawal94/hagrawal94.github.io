@@ -714,7 +714,7 @@ class LikeButton extends React.Component {
       React.createElement(
         "ul",
         {
-          className: "navbar-nav ml-auto",
+          className: "navbar-nav",
         },
         React.createElement(
           "li",
